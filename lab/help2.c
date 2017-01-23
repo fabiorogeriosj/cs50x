@@ -1,21 +1,18 @@
-#include <stdio.h>
 #include <cs50.h>
+#include <stdio.h>
+#include <math.h>
 
 int main(void)
-{
-    int ht = 0;
-    //gets prompt from user
-    do {
-        printf("Height:");
-        ht = get_int();
-        //check to see if int is between 1 and 23 
-    } while (ht < 0 || ht > 23);
-        
-    for (int i = 1; i <= ht; i++)
-    {
-        printf("line %i\n", i);
-        //create col with spaces and hashes here :)
-    }
+{ 
+    float change;
+    int counter = 0; //need declaration type of variable
     
-    return 0;
+    do {
+        printf("change:");
+        change=get_float();
+    } while(change < 0);
+
+    int i=change*100; //need declaration type of variable
+
+    while (i >= 25; 25/i; counter++); //need ; end line code
 }
